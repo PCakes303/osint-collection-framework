@@ -6,23 +6,68 @@
   "name": "osint-collection-framework",
   "version": "0.1.0",
   "visibility": "public",
-  "maturity": "scaffolded",
+  "maturity": "scaffolding",
   "summary": "Review-gated validation of collection plans for non-personal public information. Local scaffold only; it performs no network collection or content retrieval.",
-  "license": {"expression": null, "status": "pending-review", "notes": "Scoped mixed-license strategy; file-level provenance and third-party license review remains open."},
+  "license": {
+    "expression": null,
+    "status": "pending-review",
+    "notes": "Scoped mixed-license strategy; file-level provenance and third-party license review remains open."
+  },
   "interfaces": [],
   "dependencies": [
-    {"id":"osint-source-registry","constraint":"*","kind":"contract"},
-    {"id":"policy-engine","constraint":"*","kind":"contract"},
-    {"id":"identity-trust","constraint":"*","kind":"contract"},
-    {"id":"audit-provenance","constraint":"*","kind":"contract"},
-    {"id":"emergency-control","constraint":"*","kind":"contract"},
-    {"id":"compliance-governance","constraint":"*","kind":"contract"},
-    {"id":"secure-supply-chain","constraint":"*","kind":"contract"}
+    {
+      "id": "osint-source-registry",
+      "constraint": "*",
+      "kind": "contract"
+    },
+    {
+      "id": "policy-engine",
+      "constraint": "*",
+      "kind": "contract"
+    },
+    {
+      "id": "identity-trust",
+      "constraint": "*",
+      "kind": "contract"
+    },
+    {
+      "id": "audit-provenance",
+      "constraint": "*",
+      "kind": "contract"
+    },
+    {
+      "id": "emergency-control",
+      "constraint": "*",
+      "kind": "contract"
+    },
+    {
+      "id": "compliance-governance",
+      "constraint": "*",
+      "kind": "contract"
+    },
+    {
+      "id": "secure-supply-chain",
+      "constraint": "*",
+      "kind": "contract"
+    }
   ],
-  "entrypoints": ["osint_collection/planner.py"],
-  "security": {"threat_model":"docs/THREAT-MODEL.md","secrets_in_repository":false,"data_classification":"public","security_contact":null},
-  "repository_url":"https://github.com/PCakes303/osint-collection-framework",
-  "default_branch":"main",
+  "entrypoints": [
+    "osint_collection/planner.py"
+  ],
+  "security": {
+    "threat_model": "docs/THREAT-MODEL.md",
+    "secrets_in_repository": false,
+    "data_classification": "public",
+    "security_contact": null
+  },
+  "repository_url": "https://github.com/PCakes303/osint-collection-framework",
+  "default_branch": "main",
   "compatibility": [],
-  "evidence": [{"claim":"Local tests exercise collection-plan validation only; they do not demonstrate network collection or production enforcement.","kind":"test","location":"tests/test_planner.py"}]
+  "evidence": [
+    {
+      "claim": "Local tests exercise collection-plan validation only; they do not demonstrate network collection or production enforcement.",
+      "kind": "test",
+      "location": "tests/test_planner.py"
+    }
+  ]
 }
