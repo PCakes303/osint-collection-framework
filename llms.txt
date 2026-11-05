@@ -1,0 +1,13 @@
+# OSINT Collection Framework
+
+- Purpose: bounded, review-gated collection-plan validation for non-personal public metadata.
+- Maturity: scaffolded plan validator; no network or collection client.
+- Start: README.md
+- Contract: docs/COLLECTION-CONTRACT.md
+- Privacy/lawfulness: docs/PRIVACY-AND-LAWFULNESS.md
+- Integration gates: docs/INTEGRATION-GATES.md
+- Schema: schemas/collection-request.schema.json
+- Validator: osint_collection/planner.py
+- Tests: tests/
+- Dependencies: osint-source-registry, identity-trust, policy-engine, audit-provenance, emergency-control, compliance-governance, secure-supply-chain (declared only).
+- License: scoped mixed-license policy in LICENSE.md; file-level provenance and redistribution review remains required.
