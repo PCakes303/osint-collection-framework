@@ -1,0 +1,33 @@
+{
+  "capabilities_version": "1.0.0",
+  "repository": "osint-collection-framework",
+  "repository_id": "osint-collection",
+  "maturity": "scaffolded",
+  "capabilities": [
+    {
+      "id": "osint.collection-plan.validate",
+      "name": "Fail-closed public collection plan validation",
+      "status": "tested",
+      "description": "Validates a bounded non-personal collection plan against source metadata and explicit identity, policy, terms, privacy, emergency-stop, compliance and audit gate evidence.",
+      "evidence": [
+        "osint_collection/planner.py",
+        "schemas/collection-request.schema.json",
+        "tests/test_planner.py"
+      ],
+      "limitations": [
+        "No network requests, content collection, source execution or production authorization."
+      ]
+    }
+  ],
+  "explicit_non_capabilities": [
+    "Web crawling, scraping, downloading or authenticated API access",
+    "DNS resolution, redirect handling or SSRF protection",
+    "Personal-data enrichment, profiling or individual targeting",
+    "Sensitive personal data collection",
+    "Credential harvesting or access-control bypass",
+    "Legal advice or automated license interpretation",
+    "Production policy/identity enforcement",
+    "Emergency-stop propagation or runtime enforcement",
+    "Durable audit storage or compliance certification"
+  ]
+}
