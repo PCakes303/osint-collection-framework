@@ -1,0 +1,20 @@
+{
+  "manifest_version": "1.0.0",
+  "id": "osint-collection",
+  "name": "osint-collection-framework",
+  "version": "0.1.0",
+  "maturity": "scaffolded",
+  "role": "Review-gated collection-plan validation for non-personal public information; no network collector or content retrieval.",
+  "dependencies": [
+    "osint-source-registry",
+    "identity-trust",
+    "policy-engine",
+    "audit-provenance",
+    "emergency-control",
+    "compliance-governance",
+    "secure-supply-chain"
+  ],
+  "entrypoint": "osint_collection/planner.py",
+  "license_status": "scoped-mixed-license-policy; file-level-provenance-review-pending",
+  "execution_authority": false
+}
